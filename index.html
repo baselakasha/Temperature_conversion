@@ -2,12 +2,32 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Temperature conversion</title>       
-    <meta name="viewport"content="width=device-width, initial-scale=1.0" />        
+    <title>Temperature conversion</title>   
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta charset="UTF-8"/>
+    <!-- Address bar color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#3C989E" /> 
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#3C989E" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3C989E" />
+
     <link rel="stylesheet" href="src/style/main.css"/>
 </head>
 <body>
-     
+    <center>
+        <div id="mainDiv">
+            <label>(°C)</label>
+            <input type="text"/>
+            
+            <label>(°F)</label>
+            <input type="text"/>
+        
+            <label>(°K)</label>
+            <input type="text"/>
+        </div>
+    </center>
     <script src="src/script/main.js"></script>
 </body>
 </html>

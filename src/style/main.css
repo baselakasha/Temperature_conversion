@@ -1,0 +1,16 @@
+body {
+    background-color:#F4CDA5;
+    color:#3C989E;
+}
+#mainDiv{
+    height:300px;
+    margin-top:50px;
+}
+#mainDiv input{
+    border:none;
+    background-color:#F57A82;
+    width:220px;
+    height:20px;
+    display:block;
+    margin:7px;
+}
