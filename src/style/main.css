@@ -1,6 +1,13 @@
 body {
     background-color:#F4CDA5;
     color:#3C989E;
+    
+}
+input:focus::placeholder{
+    color:#F57A82;
+}
+label{
+	font-size:25px;
 }
 #mainDiv{
     height:300px;
@@ -9,8 +16,8 @@ body {
 #mainDiv input{
     border:none;
     background-color:#F57A82;
-    width:220px;
-    height:20px;
+    width:270px;
+    height:30px;
     display:block;
-    margin:7px;
+    margin:10px;
 }
