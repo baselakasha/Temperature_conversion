@@ -10,6 +10,15 @@ function ftc(val){ // fahrenheit to celsius
 function ktc(val){ // kelvin to celsius 
     return (Number(val)-273);
 }
+function warring(elem){ // empty all input and 
+    elem.style.border="2px solid red";
+    celsius.value="";
+    fahrenheit.value="";
+    kelvin.value="";
+    setTimeout(function(){
+        elem.style.border="none";
+    },1500);
+}
 window.onload=function(){
     "use strict";
     var celsius=document.getElementById("celsius"),
@@ -21,6 +30,9 @@ window.onload=function(){
                 fahrenheit.value=ctf(celsius.value); 
                 kelvin.value=ctk(celsius.value);       
             }
+            else{
+	             warring(celsius);
+            }
         },350);
     });
     fahrenheit.addEventListener("input",function(){    
@@ -30,6 +42,9 @@ window.onload=function(){
                 celsius.value=ftcVal;
                 kelvin.value=ctk(ftcVal);
             }
+            else{
+	             warring(fahrenheit);
+            }
         },350);      
     });
     kelvin.addEventListener("input",function(){
@@ -38,6 +53,9 @@ window.onload=function(){
                var celsiusValue=ktc(kelvin.value);
                celsius.value=celsiusValue;
                fahrenheit.value=ctf(celsiusValue);
+            }
+            else{
+	             warring(kelvin);
             }
         },350);
     });    
