@@ -12,11 +12,11 @@ function ktc(val){ // kelvin to celsius
 }
 function warring(elem){ // empty all input and 
     elem.style.border="2px solid red";
-    celsius.value="";
-    fahrenheit.value="";
-    kelvin.value="";
     setTimeout(function(){
         elem.style.border="none";
+        celsius.value="";
+        fahrenheit.value="";
+        kelvin.value="";
     },1500);
 }
 window.onload=function(){
